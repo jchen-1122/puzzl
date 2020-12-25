@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Counter from "./Counter"
+import {Link} from "react-router-dom";
 
 function List(props) {
 
@@ -47,7 +48,7 @@ function List(props) {
 
     return (
     <div class="flex flex-col">
-        <h1 class="font-sans m-10 text-5xl">Puzzl Store</h1>
+        <Link to={{pathname: "/form"}}><h1 class="font-sans m-10 text-5xl">Puzzl Store</h1></Link>
         <div class="-my-2 overflow-x-auto sm:-mx-6 lg:mx-96">
             <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
             <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">

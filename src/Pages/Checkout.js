@@ -19,7 +19,6 @@ function Checkout(props) {
     }, [])
 
   const amount = props.location.state.amount
-  const totalG = props.location.state.total
   const calculateTotal = () => {
     var res = 0;
     for (var i = 0; i < Object.keys(amount).length; i++) {

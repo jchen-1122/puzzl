@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import './index.css';
 import App from "./App";
 import Checkout from "./Pages/Checkout";
+import Form from "./Pages/Form"
 import reportWebVitals from './reportWebVitals';
 
 
@@ -13,6 +14,7 @@ ReactDOM.render(
    <Switch>
     <Route exact path="/" component={App} />
     <Route path="/checkout" component={Checkout} />
+    <Route path="/form" component={Form} />
   </Switch>
   </BrowserRouter>,
   rootElement
